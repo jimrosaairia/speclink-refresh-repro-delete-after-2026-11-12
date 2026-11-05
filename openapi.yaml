@@ -20,3 +20,10 @@ paths:
       responses:
         "200":
           description: OK
+  /ip:
+    get:
+      operationId: getOriginIp
+      summary: Return the caller's origin IP (added in v2)
+      responses:
+        "200":
+          description: OK
