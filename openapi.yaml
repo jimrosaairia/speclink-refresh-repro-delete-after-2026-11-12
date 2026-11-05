@@ -1,0 +1,22 @@
+openapi: 3.0.3
+info:
+  title: SpecLink refresh repro
+  version: "1.0.0"
+  description: Throwaway spec for an Airia MCP Gateway SpecLink freshness repro. DELETE-AFTER 2026-11-12.
+servers:
+  - url: https://httpbin.org
+paths:
+  /get:
+    get:
+      operationId: echoGet
+      summary: Echo the request as JSON
+      responses:
+        "200":
+          description: OK
+  /uuid:
+    get:
+      operationId: getUuid
+      summary: Return a random UUID
+      responses:
+        "200":
+          description: OK
